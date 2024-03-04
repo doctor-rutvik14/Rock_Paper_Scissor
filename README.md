@@ -16,7 +16,7 @@ Let's walk through an instance to understand how the JavaScript functionality op
     * The isWinner(selection, opponentSelection) function is called twice to determine the winner of the round:
         * const yWinner = isWinner(selection, pcSelection);
         * Checks if the user's selection beats the computer's selection.
-        * If yWinner is true, the user wins the round.
+        * If yWinner is true, the user wins the round.(In this instance)
         * const pcWinner = isWinner(pcSelection, selection);
         * Checks if the computer's selection beats the user's selection.
         * If pcWinner is true, the computer wins the round.
