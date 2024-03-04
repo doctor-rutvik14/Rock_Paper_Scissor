@@ -22,10 +22,10 @@ Let's walk through an instance to understand how the JavaScript functionality op
         * If pcWinner is true, the computer wins the round.
     * By evaluating both scenarios separately, the program accurately determines the winner of each round, accounting for all possible outcomes.
 * Displaying Result:
-    * Based on the outcome, the appropriate line of code is executed to display the result:selectionResult(selection, yWinner);   
+    * Based on the outcome, the appropriate line of code is executed to display the result:selectionResult(selection, yWinner) and selectionResult(pcSelection, pcWinner) respectively. These lines are called within the makeSelection() function after determining the winners of each round and these lines are also responsible for printing the user-selected emoji and the computer-generated emoji.
         * This line displays the result of the user's selection.
-        * It creates a <div> element representing the selection result, setting its inner text to the corresponding emoji.
-        * CSS classes are added for styling, and the <div> is appended to the HTML document.
+        * It creates a div element representing the selection result, setting its inner text to the corresponding emoji.
+        * CSS classes are added for styling, and the div is appended to the HTML document.
 * Incrementing Score:
     * If there's a winner, their score is incremented accordingly:if (yWinner) incrementScore(yScore);   
         * Checks if the user won the round (yWinner is true).
